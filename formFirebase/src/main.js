@@ -6,6 +6,7 @@ import router from './router'
 import './plugins/bootstrap-vue'
 import './plugins/axios'
 import './plugins/jsonexcel'
+import './css/estilo.css'
 
 Vue.config.productionTip = false
 

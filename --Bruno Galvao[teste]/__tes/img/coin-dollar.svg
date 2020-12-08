@@ -1,0 +1,3 @@
+<svg id="coin-dollar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <path id="coin-dollar-2" data-name="coin-dollar" d="M41,16A25,25,0,1,0,66,41,25,25,0,0,0,41,16Zm0,45A20,20,0,1,1,61,41,20,20,0,0,1,41,61Zm1.667-21.667V32.667h6.667V29.333H42.667V26H39.333v3.333H32.667V42.667h6.667v6.667H32.667v3.333h6.667V56h3.333V52.667h6.667V39.333Zm-3.333,0H36V32.667h3.333Zm6.667,10H42.667V42.667H46Z" transform="translate(-16 -16)" fill="#fff"/>
+</svg>

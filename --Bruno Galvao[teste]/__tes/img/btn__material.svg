@@ -1,0 +1,30 @@
+<svg id="btn__material" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="950" height="124" viewBox="0 0 950 124">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#065a9a"/>
+      <stop offset="1" stop-color="#032d4d"/>
+    </linearGradient>
+    <filter id="Retângulo_91" x="129" y="-9" width="830" height="142" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.42"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Retângulo_91)">
+        <rect id="Retângulo_91-2" data-name="Retângulo 91" width="812" height="124" transform="translate(692 1601)" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.149"/>
+    </linearGradient>
+  </defs>
+  <g id="btn__material-2" data-name="btn__material">
+    <rect id="Retângulo_76" data-name="Retângulo 76" width="950" height="124" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Grupo_de_máscara_10" data-name="Grupo de máscara 10" transform="translate(-554 -1601)" clip-path="url(#clip-path)">
+    <path id="Caminho_88" data-name="Caminho 88" d="M547.472,335.269a65,65,0,0,1,21.267,3.547,59.721,59.721,0,0,1,50.118-26.485c28.667,0,52.56,19.454,57.911,45.25a53.778,53.778,0,0,1,7.452-.521c28.11,0,50.9,21.694,50.9,48.456s-22.794,48.456-50.9,48.456l-.269,0h-136.4l-.079,0-.057,0h-.239c-34.3-.151-62.052-26.666-62.052-59.349,0-32.781,27.911-59.349,62.348-59.349Zm101.111,62.749L610.12,435.977l-38.458-37.958,8.34-7.64,24.317,24.014V345.838h11.607v68.553l24.313-24.014,8.344,7.64Z" transform="translate(763.876 1292.669)" fill-rule="evenodd" opacity="0.16" fill="url(#linear-gradient-3)" style="mix-blend-mode: lighten;isolation: isolate"/>
+  </g>
+</svg>

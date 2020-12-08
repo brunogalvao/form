@@ -1,0 +1,161 @@
+// framework
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+// ico
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+
+// import
+@import url("hover.css");
+
+// preferencialmente usar fonts web
+$font: "Open Sans", sans-serif;
+
+
+:root {
+    --azul: #065a9a;
+    --azul-dark: #01143A;
+}
+
+p {
+    color: var(--gray);
+    font: 1rem $font;
+}
+
+h1 {
+    font-family: $font;
+}
+
+.azul {
+    background: var(--azul);
+    &-text {
+        color: var(--azul);
+    }
+}
+
+.azul-dark {
+    background: var(--azul-dark);
+    &-text {
+        color: var(--azul-dark);
+    }
+}
+
+//usar essa classe para os textos.
+.cinza {
+    background: var(--text);
+    &-text {
+        color: var(--text);
+    }
+}
+
+.white {
+    &-text {
+        color: white;
+    }
+}
+
+//Classe, sempre usar dois underlines para diferenciar as classe e especificação
+.header {
+    height: 100vh;
+    background: url("../img/home_bg.png") no-repeat;
+    background-size: cover;
+    h1 {
+        font-size: 3.6rem;
+    }
+}
+
+.navbar-toggler i {
+    font-size: 2.4rem;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0, .42);
+    a {
+        color: black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    li:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn__institucional {
+    width: 100%;
+    background: url("../img/btn__material.png") no-repeat;
+    background-position: center right;
+    background-size: cover;
+    border: none;
+    box-shadow: 0px 0px 6px rgba(0,0,0, .42);
+}
+
+.solucoes {
+    background: url('../img/bg_solucoes.png') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    .card {
+        height: 172px;
+        background: transparent;
+        border: 3px solid white;
+        transition: all .3s ease;
+        .card-body {
+            cursor: pointer;
+            img {
+                width: 3rem;
+            }
+        }
+        &:hover {
+            background: rgba(255,255,255, .18);
+            box-shadow: 0px 0px 10px rgba(0,0,0, 1);
+        }
+    }
+}
+
+.lead {
+    button {
+        background: transparent;
+        border: none;
+    }
+}
+
+.form-control {
+    border: 0px;
+    border-bottom: 4px solid var(--azul);
+    border-radius: 0px;
+}
+
+.form-control::placeholder {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.list-group-item {
+    background: transparent;
+}
+
+.hvr-underline-from-center:before {
+    background: var(--azul);
+    height: 1px;
+}
+    
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    //CSS
+}
+
+// // Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    //CSS
+}

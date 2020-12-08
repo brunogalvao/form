@@ -1,21 +1,30 @@
 <template>
     <div class="container">
-        <h1>Página de Gestão do Usuario</h1>
+        <h1>Página de <b>Gestão do Usuario</b></h1>
 
-        <ul class="menu m-0 pb-3 pl-0">
-            <router-link to="/"> home </router-link>
+        <!-- <Menu /> -->
 
-            <router-link @click.native="obterUsuario" to="">usuario</router-link>
-            <router-link @click.native="obterUsuarioConnect" to="">connect</router-link>
-            <router-link @click.native="obterUsuarioTroque" to="">troque</router-link>
+        <b-navbar toggleable="sm" type="light" variant="light" fixed class="mb-4"> 
+            <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-        </ul>
+            <b-navbar-brand>Clinipam</b-navbar-brand>
+
+            <b-collapse id="nav-text-collapse" is-nav>
+                <b-navbar-nav>
+                    <b-nav-item to="/">home</b-nav-item>
+                    <b-nav-item @click="obterUsuario">usuario</b-nav-item>
+                    <b-nav-item @click="obterUsuarioConnect">connect</b-nav-item>
+                    <b-nav-item @click="obterUsuarioTroque">troque</b-nav-item>
+                </b-navbar-nav>
+            </b-collapse>
+        </b-navbar>
+
 
         <b-list-group>
 			<b-list-group-item class="mb-2" v-for="(usuario, id) in usuarios" :key="id">
-				<strong>Nome: </strong> {{usuario.nome}} <br>
-				<strong>E-mail: </strong> {{usuario.email}} <br>
-				<strong>ID: </strong> {{id}}
+				<strong>Nome: </strong> {{ usuario.nome }} <br>
+				<strong>E-mail: </strong> {{ usuario.email }} <br>
+				<strong>ID: </strong> {{ id }}
 			</b-list-group-item>
 		</b-list-group>
 
@@ -56,6 +65,8 @@
 </template>
 
 <script>
+import Menu from './Menu'
+
 export default {
     data () {
         return {
@@ -90,6 +101,9 @@ export default {
 				console.log(res.data)
 			})
         }
+    },
+    components: {
+        Menu
     }
 }
 </script>
