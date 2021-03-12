@@ -1,0 +1,156 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("./fonte/scss/fontawesome.css");
+@import url("./fonte/scss/solid.css");
+@import url("./fonte/scss/regular.css");
+@import url("./fonte/scss/brands.css");
+@import url("./fonte/scss/v4-shims.css");
+:root {
+  --font-clinipam: $font;
+  --cinza-100: #eaeaea;
+  --cinza-500: #5E5E5E;
+  --bordo: #E01B41;
+  --roxo: #955BFB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--theme-text);
+  font: 1rem "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.orange {
+  background: var(--orange);
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+.cinza-100 {
+  background: var(--cinza-100);
+}
+
+.cinza-100-text {
+  color: var(--cinza-100);
+}
+
+.cinza-500 {
+  background: var(--cinza-500);
+}
+
+.cinza-500-text {
+  color: var(--cinza-500);
+}
+
+.cinza {
+  background: var(--text);
+}
+
+.cinza-text {
+  color: var(--text);
+}
+
+.white-text {
+  color: white;
+}
+
+.bordo {
+  background: var(--bordo);
+}
+
+.bordo-text {
+  color: var(--bordo);
+}
+
+.roxo {
+  background: var(--roxo);
+}
+
+.roxo-text {
+  color: var(--roxo);
+}
+
+.home {
+  min-height: auto;
+  height: 70vh;
+  background: url("../img/top.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.home h2 {
+  font-size: 2.88rem;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .home {
+    height: 56vh;
+    background-position: 22% center;
+  }
+  .home h2 {
+    font-size: 2.4rem;
+    line-height: 2.28rem;
+  }
+  .home h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.form-group input {
+  border: none;
+  border-bottom: 1px solid var(--roxo);
+  height: 2.4rem;
+}
+
+.btn {
+  border-radius: 50px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.btn:hover {
+  color: white;
+  background: var(--roxo);
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn_curso {
+  border: 1px solid var(--roxo);
+}
+
+.warning {
+  background: var(--warning);
+}
+
+.warning-text {
+  color: var(--warning);
+}
+
+.success {
+  background: var(--success);
+}
+
+.success-text {
+  color: var(--success);
+}
+
+.texto_inst {
+  min-height: 240px;
+  background-image: linear-gradient(-32deg, #000, #494949);
+}
+
+.footer {
+  background: #707070;
+  border-top: 1.2rem solid var(--orange-dark);
+}
+/*# sourceMappingURL=estilo.css.map */
